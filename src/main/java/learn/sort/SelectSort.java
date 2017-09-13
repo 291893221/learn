@@ -1,8 +1,5 @@
 package learn.sort;
 
-/**
- * Created by gisuni on 2017/8/23.
- */
 public class SelectSort {
     public static void main(String[] args) {
         int[] array = {10, 7, 12, 6, 13, 9, 100, 90, 1, 17, 91};
