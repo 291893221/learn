@@ -33,12 +33,20 @@ public class ArrayStack<T> implements Stack<T> {
 	}
 
 	public T pop() {
+		// 判断堆栈是否为空
+		if (isEmpty()) {
+			return null;
+		}
 		T t = array[--index];
 		array[index] = null;
 		return t;
 	}
 
 	public T peek() {
+		// 判断堆栈是否为空
+		if (isEmpty()) {
+			return null;
+		}
 		return array[index - 1];
 	}
 
@@ -47,6 +55,10 @@ public class ArrayStack<T> implements Stack<T> {
 	}
 
 	public int search(T t) {
+		// 判断堆栈是否为空
+		if (isEmpty()) {
+			return -1;
+		}
 		for (int i = 0; i < index; i++) {
 			T ti = array[i];
 			if (t.equals(ti)) {
@@ -57,6 +69,10 @@ public class ArrayStack<T> implements Stack<T> {
 	}
 
 	public void reverse() {
+		// 判断堆栈是否为空
+		if (isEmpty()) {
+			return;
+		}
 		array = Arrays.copyOf(array, index);
 		Collections.reverse(Arrays.asList(array));
 	}
@@ -64,12 +80,16 @@ public class ArrayStack<T> implements Stack<T> {
 	@Override
 	public String toString() {
 		String rs = "";
+		// 判断堆栈是否为空
+		if (isEmpty()) {
+			return "[ ]";
+		}
 		for (int i = 0; i < index; i++) {
 			T t = array[i];
 			rs += ", " + t.toString();
 		}
 		rs = rs.replaceFirst(",", "[");
-		rs += "]";
+		rs += " ]";
 		return rs;
 	}
 }
