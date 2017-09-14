@@ -79,11 +79,11 @@ public class ArrayStack<T> implements Stack<T> {
 
 	@Override
 	public String toString() {
-		String rs = "";
 		// 判断堆栈是否为空
 		if (isEmpty()) {
 			return "[ ]";
 		}
+		String rs = "";
 		for (int i = 0; i < index; i++) {
 			T t = array[i];
 			rs += ", " + t.toString();
