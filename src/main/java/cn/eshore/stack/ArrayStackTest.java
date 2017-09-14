@@ -3,6 +3,7 @@ package cn.eshore.stack;
 public class ArrayStackTest {
 	public static void main(String[] args) {
 		ArrayStack<String> arrayStack = new ArrayStack<String>();
+		System.out.println(arrayStack.pop());
 		arrayStack.push("A");
 		arrayStack.push("B");
 		arrayStack.push("C");
