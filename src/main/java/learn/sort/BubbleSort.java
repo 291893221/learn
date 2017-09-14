@@ -1,5 +1,9 @@
 package learn.sort;
 
+/**
+ * 冒泡排序：比较相邻两个元素，如果前一个比后一个大，就交换位置
+ * 稳定排序算法
+ */
 public class BubbleSort {
     public static void main(String[] args) {
         int[] array = {10, 7, 12, 6, 13, 9, 100, 90, 1, 17, 91};

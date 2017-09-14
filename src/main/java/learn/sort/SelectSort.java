@@ -1,5 +1,9 @@
 package learn.sort;
 
+/**
+ * 选择排序：每一次从待排序的元素中，选出最小的（或最大的）一个元素，放到已排序的末尾
+ * 不稳定排序算法
+ */
 public class SelectSort {
     public static void main(String[] args) {
         int[] array = {10, 7, 12, 6, 13, 9, 100, 90, 1, 17, 91};
